@@ -9,3 +9,5 @@ def home():
     return render_template("homepage.html")
 
     return app
+
+# app test
