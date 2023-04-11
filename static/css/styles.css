@@ -129,6 +129,6 @@ body {
 
 .footer {
     background-color: purple;
-    padding: auto;
+    /* padding: auto; */
     color: black;
 }
