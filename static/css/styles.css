@@ -26,20 +26,22 @@ body {
     filter: brightness(0.6);
 }
 
+/* Navbar */
+
 .navbar {
-    /* font-family: 'Alkatra', cursive;
+    padding: 20px 10px;
+    font-family: 'Alkatra', cursive;
     font-size: 22px;
-    background: none; */
-    /* --bs-bg-opacity: 0; */
+    background: none; 
+    --bs-bg-opacity: 0;
     transition: all 0.5s;
     height: 70px;
 }
 
 .navbar-scrolled {
+    padding: 20px 10px;
     position: sticky;
-    width: 100%;
-    background-color: #2C2C2C;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0, 0.15);
+    background-color: rgb(22, 20, 20);
 }
 
 .navbar-brand {
@@ -76,10 +78,12 @@ body {
     background-color: rgb(184, 14, 184);
 }
 
+/* Header */
+
 .cover {
     text-align: center;
     padding-top: 80px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
 }
 
 .cover-heading {
@@ -109,12 +113,14 @@ body {
     text-decoration: none;
 }
 
+/* Welcome */
+
 .welcome {
     font-family: 'Alkatra', cursive;
-    margin: 10px;
-    padding: 20px 40px;
+    padding: 40px 60px;
     text-align: center;
     font-size: 20px;
+    background-color: aliceblue;
 }
 
 .welcome-header1 {
@@ -127,8 +133,87 @@ body {
     padding-bottom: 20px;
 }
 
+/* Contact */
+
+.contact {
+    font-family: 'Alkatra', cursive;
+    padding: 40px 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact-header1 {
+    color: purple;
+    padding-bottom: 5px;
+}
+
+.contact-header2 {
+    color: rgb(63, 62, 62);
+    text-decoration: overline;
+    padding-bottom: 20px;
+}
+
+.contact-num {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-img {
+    height: 225px;
+    width: 350px;
+}
+
+.form {
+    display: inline;
+}
+
+.form__label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+.textarea__label {
+    display: inline-block;
+    width: 150px;
+    vertical-align: top;
+    text-align: right;
+}
+
+.form__textarea {
+    width: 400px;
+    font-size: 18px;
+    padding: 15px 20px;
+    border: none;
+    background-color: #f3f6f6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.form__submit {
+    background-color: rgb(184, 14, 184);
+    border: none;
+    font-size: 18px;
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: white;
+    text-align: right;
+}
+
+.form__submit:hover {
+    background-color: purple;
+}
+
 .footer {
     background-color: purple;
-    /* padding: auto; */
-    color: black;
+    padding: 5px 10px;
+    color: white;
+}
+
+.logo-footer {
+    color: white;
+}
+
+.nav-item {
+    color: white;
 }
