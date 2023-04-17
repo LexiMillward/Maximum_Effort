@@ -133,6 +133,64 @@ body {
     padding-bottom: 20px;
 }
 
+/* Services */
+
+.services {
+    font-family: 'Alkatra', cursive;
+    padding: 40px 60px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.services-header1 {
+    color: purple;
+    padding-bottom: 5px;
+}
+
+.services-header2 {
+    color: rgb(63, 62, 62);
+    text-decoration: overline;
+    padding-bottom: 60px;
+}
+
+.sub-services-header {
+    color: purple;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.list-header {
+    color: palevioletred;
+}
+
+.services-blocks {
+    height: 500px;
+    width: 350px;
+    align-self: center;
+}
+
+.availability {
+    padding-bottom: 80px;
+}
+
+.fees-images {
+    
+}
+
+.services-blocks2 {
+    height: 500px;
+    width: 350px;
+}
+
+.services-sand {
+    height: 500px;
+    width: 350px; 
+}
+
+
+
 /* Contact */
 
 .contact {
@@ -140,6 +198,7 @@ body {
     padding: 40px 40px;
     text-align: center;
     font-size: 20px;
+    background-color: aliceblue;
 }
 
 .contact-header1 {
