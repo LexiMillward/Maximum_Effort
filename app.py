@@ -9,6 +9,24 @@ def home():
     return render_template("index.html")
 
 
-    return app
+@app.route("/useful-links/")
+def usefulLinks():
 
-# app test
+    return render_template("useful_links.html")
+
+
+@app.route("/Q&A/")
+def qanda():
+
+    return render_template("qanda.html")
+
+
+@app.route("/EYFS/")
+def eyfs():
+
+    return render_template("eyfs.html")
+
+
+app.run(debug=True)
+
+

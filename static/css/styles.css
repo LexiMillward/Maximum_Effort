@@ -26,6 +26,17 @@ body {
     filter: brightness(0.6);
 }
 
+.title-header1 {
+    color: purple;  
+}
+
+.title-header2 {
+    color: rgb(63, 62, 62);
+    text-decoration: overline;
+    padding-bottom: 20px;
+}
+
+
 /* Navbar */
 
 .navbar {
@@ -49,9 +60,27 @@ body {
     color: white;
 }
 
+.navbar-brand:hover {
+    color: white;
+}
+
 .nav-link {
     justify-self: center;
     color: white;
+}
+
+.nav-link:hover {
+    color: rgb(221, 22, 221);
+}
+
+.dropdown-toggle:hover {
+    color: rgb(221, 22, 221);
+    text-decoration: none;
+}
+
+.dropdown-item:hover{
+    background: none;
+    color: purple;
 }
 
 .btn {
@@ -77,6 +106,7 @@ body {
 .btn.btn-signup:hover {
     background-color: rgb(184, 14, 184);
 }
+
 
 /* Header */
 
@@ -113,6 +143,7 @@ body {
     text-decoration: none;
 }
 
+
 /* Welcome */
 
 .welcome {
@@ -123,16 +154,6 @@ body {
     background-color: aliceblue;
 }
 
-.welcome-header1 {
-    color: purple;  
-}
-
-.welcome-header2 {
-    color: rgb(63, 62, 62);
-    text-decoration: overline;
-    padding-bottom: 20px;
-}
-
 /* Services */
 
 .services {
@@ -140,17 +161,6 @@ body {
     padding: 40px 60px;
     text-align: center;
     font-size: 20px;
-}
-
-.services-header1 {
-    color: purple;
-    padding-bottom: 5px;
-}
-
-.services-header2 {
-    color: rgb(63, 62, 62);
-    text-decoration: overline;
-    padding-bottom: 60px;
 }
 
 .sub-services-header {
@@ -175,10 +185,6 @@ body {
     padding-bottom: 80px;
 }
 
-.fees-images {
-    
-}
-
 .services-blocks2 {
     height: 500px;
     width: 350px;
@@ -190,7 +196,6 @@ body {
 }
 
 
-
 /* Contact */
 
 .contact {
@@ -199,17 +204,6 @@ body {
     text-align: center;
     font-size: 20px;
     background-color: aliceblue;
-}
-
-.contact-header1 {
-    color: purple;
-    padding-bottom: 5px;
-}
-
-.contact-header2 {
-    color: rgb(63, 62, 62);
-    text-decoration: overline;
-    padding-bottom: 20px;
 }
 
 .contact-num {
@@ -262,6 +256,85 @@ body {
 .form__submit:hover {
     background-color: purple;
 }
+
+
+/* Useful-Links */
+
+.useful-links {
+    font-family: 'Alkatra', cursive;
+    padding: 40px 60px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.ul-header {
+    color: purple;
+    text-decoration: underline;
+}
+
+.ofstead {
+    max-height: 50px;
+    max-width: 100px;
+    border-radius: 10px;
+}
+
+.ofstead:hover {
+    box-shadow: 0 0 2px 2px purple;
+}
+
+.gov {
+    max-height: 50px;
+    width: 90px;
+    border-radius: 10px;
+}
+
+.gov:hover {
+    box-shadow: 0 0 2px 2px purple;
+}
+
+.norfolk {
+    max-height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.norfolk:hover {
+    box-shadow: 0 0 2px 2px purple;
+}
+
+
+/* Q&A */
+
+.qanda {
+    font-family: 'Alkatra', cursive;
+    padding: 40px 60px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.question-header {
+    color: purple;
+}
+
+/* EYLF */
+
+.eylf {
+    font-family: 'Alkatra', cursive;
+    padding: 40px 60px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.eylf-header {
+    color: purple;
+}
+
+.eylf-list {
+    list-style: none;
+}
+
+
+/* Footer */
 
 .footer {
     background-color: purple;
