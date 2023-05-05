@@ -154,6 +154,7 @@ body {
     background-color: aliceblue;
 }
 
+
 /* Services */
 
 .services {
@@ -316,6 +317,19 @@ body {
     color: purple;
 }
 
+.accordion-button {
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.accordion-button:hover {
+    box-shadow: 0 0 2px 2px purple;
+    background-color: purple;
+    color: white;
+}
+
+
 /* EYLF */
 
 .eylf {
@@ -334,6 +348,12 @@ body {
 }
 
 
+/* Login */
+
+.popup-message {
+    color: purple;
+}
+
 /* Footer */
 
 .footer {
@@ -346,6 +366,7 @@ body {
     color: white;
 }
 
-.nav-item {
+.footer-nav-link {
     color: white;
+    text-decoration: none;
 }

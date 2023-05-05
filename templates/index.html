@@ -45,8 +45,8 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <button class="btn btn-login btn-outline-success" type="submit">Login</button>
-              <button class="btn btn-signup btn-outline-success" type="submit">Sign Up</button>
+              <a class="btn btn-login btn-outline-success" href="/login/" type="submit">Login</a>
+              <a class="btn btn-signup btn-outline-success" href="/sign-up/" type="submit">Sign Up</a>
             </form>
           </div>
         </div>
@@ -179,7 +179,7 @@
             <div class="col">
               <div class="p-3">
                 <div class="container">
-                  <form class="form" method="POST">
+                  <form class="form" action="/" method="POST">
                       <label class="form__label" for="name">Name: </label>
                       <input class="form__textarea" type="text" name="name">
                       <br>
@@ -187,10 +187,22 @@
                       <input class="form__textarea" type="text" name="email">
                       <br>
                       <label class="form__label" for="cnumber">Contact Number: </label>
-                      <input class="form__textarea" type="text" name="contact number">
+                      <input class="form__textarea" type="text" name="number">
                       <br>
                       <label class="textarea__label" for="subject">Subject: </label>
                       <textarea class="form__textarea" type="text" name="subject" placeholder = "Please let us know your child care requirments" style = "height:200px"></textarea>
+                      <br>
+                      <br>
+                      <div class="popup-message">
+                        {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                        {% for message in messages %}
+                        {{ message }}  
+                        {% endfor %}
+                        {% endif %}
+                        {% endwith %}
+                      </div>
+                      <br>
                       <br>
                       <button class="form__submit" type="submit">Submit</button>
                   </form>
@@ -237,6 +249,9 @@
               <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 text-body-secondary">About</a></li>
               <li class="nav-item mb-2"><a href="#services" class="nav-link p-0 text-body-secondary">Services</a></li>
               <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary">Contact</a></li>
+              <li class="nav-item mb-2"><a href="/useful-links/" class="nav-link p-0 text-body-secondary">Useful Links</a></li>
+              <li class="nav-item mb-2"><a href="/Q&A/" class="nav-link p-0 text-body-secondary">Q & A</a></li>
+              <li class="nav-item mb-2"><a href="/EYFS/" class="nav-link p-0 text-body-secondary">The EYLF</a></li>
             </ul>
         </div>
       
