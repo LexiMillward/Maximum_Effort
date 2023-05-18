@@ -20,10 +20,10 @@ mail.init_app(app)
 
 
 db=mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="password",
-    database="ruths_childminding"
+    host = "localhost",
+    user = os.getenv("sql_username"),
+    password = os.getenv("sql_password"),
+    database = "ruths_childminding"
 )
 
 cursor = db.cursor()
@@ -84,12 +84,18 @@ def logIn():
 
         email = request.form.get('email')
         password = request.form.get('password')
+        app.logger.info(email, password)
+        sql2 = f'SELECT * FROM login_details WHERE Email_Address = "{email}" AND Password = "{password}"'
+        app.logger.info(sql2)
+        # cursor.execute('SELECT * FROM login_details WHERE Email_Address = %s AND Password =%s', (email, password))
+        cursor.execute(sql2)
+        statement = cursor.fetchone()
+        app.logger.info(statement)
+        if statement:
+            flash('You have been logged in successfully.')
+        else:
+            flash('Cannot find account with this email address or password. Please try again.')
 
-        sql = "INSERT INTO account_details(First_Name, Last_Name, Email_Address, Contact_Number, Password) VALUES (%s, %s, %s, %s, %s)"
-        val = ( email, password)
-
-        cursor.execute(sql, val)
-        db.commit()
 
     return render_template("login.html")
 
